@@ -38,7 +38,7 @@ img {
 
 .dino:nth-child(2) {
   display: none;
-  }
+}
 
 .dino:nth-child(3) {
   display: flex;
@@ -47,7 +47,7 @@ img {
 
 .dino:last-child {
   display: none;
-  }
+}
 
 @media only screen and (min-width: 25em) {
 
