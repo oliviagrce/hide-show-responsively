@@ -16,8 +16,6 @@ html {
   box-sizing: inherit;
 }
 
-/ .......... Body .......... /
-
 img {
   width: 100%;
   display: block;
@@ -32,8 +30,6 @@ img {
 .dino:nth-child(4) {
   display: none;
 }
-
-/ .......... Media Query .......... */
 
 @media only screen and (min-width: 25em) {
 
