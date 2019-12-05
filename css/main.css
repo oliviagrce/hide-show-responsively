@@ -5,145 +5,69 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  box-sizing: border-box;
-  font: normal 100%/1.3;
 }
 
-*, *::before, *::after {
+*, *::before, ::after {
   box-sizing: inherit;
 }
 
+/ .......... Body .......... /
+
 img {
-  display: none;
   width: 100%;
-}
-
-.dino {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.dino-wrap {
   display: block;
 }
 
-.dino:nth-child(1) {
+.dino-wrap {
   display: flex;
   flex-wrap: wrap;
 }
 
-.dino:nth-child(2) {
+.dino:nth-child(2),
+.dino:nth-child(4) {
   display: none;
 }
 
-.dino:nth-child(3) {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.dino:last-child {
-  display: none;
-}
+/ .......... Media Query .......... */
 
 @media only screen and (min-width: 25em) {
 
-  html {
-    line-height: 1.3;
-  }
-
   .dino {
-    display: flex;
-    flex-wrap: wrap;
+    width: 50%;
   }
 
-  .dino:nth-child(1) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:nth-child(2) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:nth-child(3) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:last-child {
-    display: inline-block;
-    flex-wrap: wrap;
+  .dino:nth-child(2),
+  .dino:nth-child(4) {
+    display: block;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    line-height: 1.4;
-  }
-
   .dino {
-    display: flex;
-    flex-wrap: wrap;
+    width: 33.33%;
   }
 
   .dino:nth-child(1) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:nth-child(2) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:nth-child(3) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:last-child {
-    display: inline-block;
-    flex-wrap: wrap;
+    display: none;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  html {
-    line-height: 1.5;
-  }
-
   .dino {
-    display: flex;
-    flex-wrap: wrap;
+    width: 25%;
   }
 
   .dino:nth-child(1) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:nth-child(2) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:nth-child(3) {
-    display: inline-block;
-    flex-wrap: wrap;
-  }
-
-  .dino:last-child {
-    display: inline-block;
-    flex-wrap: wrap;
+    display: block;
   }
 
 }
